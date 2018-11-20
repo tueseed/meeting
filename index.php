@@ -53,8 +53,37 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
-					<input type="button" class="btn btn-success" value="สร้างการประชุม">
+				<div class="col-lg-4 offset-lg-4">
+					<input type="button" class="btn btn-success" data-toggle="modal" href="#addtopic" value="สร้างการประชุม">
+					<div class="modal fade" id="addtopic" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">เพิ่มหัวข้อการประเมิน</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">  
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
