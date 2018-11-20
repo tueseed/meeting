@@ -55,45 +55,43 @@
 			<div class="row row-center">
 				<div class="col-lg-4 offset-lg-4">
 					<input type="button" class="btn btn-success" data-toggle="modal" href="#addtopic" value="สร้างการประชุม">
-					<div class="modal fade" id="addtopic" role="dialog">
+				</div>
+			</div>
+			<div class="modal fade" id="addtopic" role="dialog">
 						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h4 class="modal-title">เพิ่มหัวข้อการประเมิน</h4>
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-								</div>
-								<div class="modal-body">
-									<div class="form-group">  
-									</div>
-									<div class="form-group">
-										<label for="meeting_topic">หัวข้อการประชุม</label>
-										<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" />
-									</div>
-									<div class="form-group">
-										<label for="meeting_date">วันที่</label>
-										<input class="form-control" type="date" name="meeting_date" id="meeting_date" />
-									</div>
-									<div class="form-group">
-										<label for="meeting_time">ตั้งแต่เวลา</label>
-										<input class="form-control" type="time" name="meeting_time" id="meeting_time" />
-									</div>
-									<div class="form-group">
-										<label for="meeting_time2">ถึงเวลา</label>
-										<input class="form-control" type="time" name="meeting_time2" id="meeting_time2"/>
-									</div>
-									<div class="form-group">
-										<label for="meeting_place">สถานที่</label>
-										<input class="form-control" type="text" name="meeting_place" id="meeting_place"/>
-									</div>
-									<div class="form-group">
-										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
-										<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
-									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
-								</div>
+						<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">เพิ่มหัวข้อการประเมิน</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="meeting_topic">หัวข้อการประชุม</label>
+								<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" />
 							</div>
+							<div class="form-group">
+								<label for="meeting_date">วันที่</label>
+								<input class="form-control" type="date" name="meeting_date" id="meeting_date" />
+							</div>
+							<div class="form-group">
+								<label for="meeting_time">ตั้งแต่เวลา</label>
+								<input class="form-control" type="time" name="meeting_time" id="meeting_time" />
+							</div>
+							<div class="form-group">
+								<label for="meeting_time2">ถึงเวลา</label>
+								<input class="form-control" type="time" name="meeting_time2" id="meeting_time2"/>
+							</div>
+							<div class="form-group">
+								<label for="meeting_place">สถานที่</label>
+								<input class="form-control" type="text" name="meeting_place" id="meeting_place"/>
+							</div>
+							<div class="form-group">
+								<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
+								<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
 						</div>
 					</div>
 				</div>
