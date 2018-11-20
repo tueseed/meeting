@@ -71,9 +71,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			
 				<input type="button" value="สร้างการประชุม">
-			</div>
+			
 		</div>
 	</body>
 </hmtl>
