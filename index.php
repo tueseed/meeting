@@ -66,16 +66,28 @@
 									<div class="form-group">  
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="หัวข้อการประชุม" />
+										<label for="meeting_topic">หัวข้อการประชุม</label>
+										<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" />
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="date" name="topic_main" id="topic_main" placeholder="วันที่" />
+										<label for="meeting_date">วันที่</label>
+										<input class="form-control" type="date" name="meeting_date" id="meeting_date" />
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="time" name="topic_main" id="topic_main" placeholder="" />
+										<label for="meeting_time">ตั้งแต่เวลา</label>
+										<input class="form-control" type="time" name="meeting_time" id="meeting_time" />
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+										<label for="meeting_time2">ถึงเวลา</label>
+										<input class="form-control" type="time" name="meeting_time2" id="meeting_time2"/>
+									</div>
+									<div class="form-group">
+										<label for="meeting_place">สถานที่</label>
+										<input class="form-control" type="text" name="meeting_place" id="meeting_place"/>
+									</div>
+									<div class="form-group">
+										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
+										<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
 									</div>
 								</div>
 								<div class="modal-footer">
