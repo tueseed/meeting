@@ -53,7 +53,9 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="row row-center">
-				<input type="button" value="สร้างการประชุม">
+				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
+					<input type="button" value="สร้างการประชุม">
+				</div>
 			</div>
 		</div>
 	</body>
