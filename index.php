@@ -52,25 +52,6 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-12">
-				<div class="modal fade" id="addtopic" role="dialog">
-					<div class="modal-dialog modal-lg">
-						<!-- Modal content-->
-						<div class="modal-content">
-							<div class="modal-header">
-								<h4 class="modal-title">เพิ่มการประชุม</h4>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-							<div class="modal-body">
-								
-							</div>
-							<div class="modal-footer">
-								<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="row row-center">
 				<input type="button" value="สร้างการประชุม">
 			</div>
