@@ -72,7 +72,7 @@
 										<input class="form-control" type="date" name="topic_main" id="topic_main" placeholder="วันที่" />
 									</div>
 									<div class="form-group">
-										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
+										<input class="form-control" type="time" name="topic_main" id="topic_main" placeholder="" />
 									</div>
 									<div class="form-group">
 										<input class="form-control" type="text" name="topic_main" id="topic_main" placeholder="" />
