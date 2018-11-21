@@ -58,6 +58,8 @@
 				</div>
 			</div>
 			<div class="modal fade" id="addtopic" role="dialog">
+				<link href="tagsinput.css" rel="stylesheet" type="text/css">
+				<script src="tagsinput.js"></script>
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -95,6 +97,10 @@
 										<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
 									</div>
 								</div>
+							</div>
+							<div class="row">
+								<label>แจ้งเตือน</label>       
+								<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
 							</div>
 						</div>
 						<div class="modal-footer">
