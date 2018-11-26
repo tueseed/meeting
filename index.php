@@ -170,7 +170,7 @@
 								<div class="col-lg-12">
 									<div class="form-group">
 										<label>แจ้งเตือน</label>       
-										<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
+										<input class="form-control" type="text" name="notice" id="notice" />
 									</div>
 								</div>
 							</div>
