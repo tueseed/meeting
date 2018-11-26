@@ -54,7 +54,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-12" style="background-color:#b461fb;">
-					<h1>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h1>
+					<h3>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h3>
 				</div>
 			</div>
 		</div>
