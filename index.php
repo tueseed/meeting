@@ -60,7 +60,7 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4">
+				<div class="col-lg-12">
 					<input type="button" class="btn btn-success" data-toggle="modal" href="#addtopic" value="สร้างการประชุม">
 				</div>
 			</div>
