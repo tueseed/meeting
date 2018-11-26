@@ -54,7 +54,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
-					<h1>THE MEETING</h1>
+					<h1>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h1>
 				</div>
 			</div>
 		</div>
