@@ -99,8 +99,10 @@
 								</div>
 							</div>
 							<div class="row">
-								<label>แจ้งเตือน</label>       
-								<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
+								<div class="form-group">
+									<label>แจ้งเตือน</label>       
+									<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
+								</div>
 							</div>
 						</div>
 						<div class="modal-footer">
