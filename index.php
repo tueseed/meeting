@@ -124,8 +124,8 @@
 													while($obj = mysqli_fetch_array($query_group))
 													{
 														echo "<tr>";
-														echo "<td>".$obj["group_num"]."</td>"
-														echo "<td>".$obj["group_name"]."</td>"
+														echo "<td>".$obj["group_num"]."</td>";
+														echo "<td>".$obj["group_name"]."</td>";
 												?>
 												<td><input type='button' class='btn btn-info' value='Link' onclick=''></td>
 												<?php
