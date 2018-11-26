@@ -67,6 +67,7 @@
 			<div class="modal fade" id="addtopic" role="dialog">
 				<link href="tag/tagsinput.css" rel="stylesheet" type="text/css">
 				<script src="tag/tagsinput.js"></script>
+				<script src="putin.js"></script>
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
