@@ -181,7 +181,8 @@
 											<thead class="thead-dark">
 												<tr>
 													<th scope="col">Gr.no</th>
-													<th scope="col">ชื่อกลุ่ม</th>															 
+													<th scope="col">ชื่อกลุ่ม</th>
+													<th scope="col">การแจ้งเตือน</th>
 												</tr>
 											</thead>
 											<tbody>
