@@ -53,14 +53,14 @@
 		?>
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
-				<div class="col-lg-4 offset-lg-4" style="background-color:#b461fb;">
+				<div class="col-lg-12" style="background-color:#b461fb;">
 					<h1>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h1>
 				</div>
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="row row-center">
-				<div class="col-lg-12">
+				<div class="col-lg-4 offset-lg-4">
 					<input type="button" class="btn btn-success" data-toggle="modal" href="#addtopic" value="สร้างการประชุม">
 				</div>
 			</div>
