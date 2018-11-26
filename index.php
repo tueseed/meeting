@@ -31,6 +31,13 @@
 				width: 100%;
 				height: 100%;
 			}
+			.table-responsive 
+			{
+				display: block;
+				max-height: 200px;
+				overflow-y: auto;
+				-ms-overflow-style: -ms-autohiding-scrollbar;
+			}
 		</style>
 	</head>
 	<script>
