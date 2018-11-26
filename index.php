@@ -106,6 +106,37 @@
 									</div>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="table-responsive">
+										<table class="table table-hover">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">Gr.no</th>
+													<th scope="col">ชื่อกลุ่ม</th>															 
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+													require('db/connect-db.php');
+													$sql_group = "SELECT * FROM tbl_group";
+													$query_group = mysqli_query($conn,$sql_group);
+													while($obj = mysqli_fetch_array($query_group))
+													{
+														echo "<tr>";
+														echo "<td>".$obj["group_num"]."</td>"
+														echo "<td>".$obj["group_name"]."</td>"
+												?>
+												<td><input type='button' class='btn btn-info' value='Link' onclick=''></td>
+												<?php
+														echo "</tr>";
+													}
+												?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
