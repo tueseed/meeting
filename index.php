@@ -99,9 +99,11 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group">
-									<label>แจ้งเตือน</label>       
-									<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
+								<div class="col-lg-8 offset-lg-2">
+									<div class="form-group">
+										<label>แจ้งเตือน</label>       
+										<input class="form-control" type="text" name="notice" id="notice" data-role="tagsinput" />
+									</div>
 								</div>
 							</div>
 						</div>
