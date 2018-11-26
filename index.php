@@ -135,7 +135,7 @@
 														echo "<td>".$obj["group_num"]."</td>";
 														echo "<td>".$obj["group_name"]."</td>";
 												?>
-												<td><input type='button' class='btn btn-info' value='เลือก' onclick='putin(<?php echo $obj["group_name"];?>)'></td>
+												<td><input type='button' class='btn btn-info' value='เลือก' onclick='put_in(<?php echo $obj["group_name"];?>)'></td>
 												<?php
 														echo "</tr>";
 													}
