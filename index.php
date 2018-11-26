@@ -198,7 +198,7 @@
 												?>
 												<td>
 													<label class="switch">
-													  <input type="checkbox">
+													  <input type="checkbox" onchange="put_in(this.value)">
 													  <span class="slider round"></span>
 													</label>
 												</td>
