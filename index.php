@@ -248,8 +248,6 @@
 									<th scope="col">ถึงเวลา</th>
 									<th scope="col">สถานที่</th>
 									<th scope="col">รายละเอียด/ผู้เข้าประชุม</th>
-									<th scope="col">แจ้งเตือน</th>
-									<th scope="col">ลิ้งค์เอกสาร</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -269,9 +267,9 @@
 										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
 								?>
-										<td><input type="button" class="btn-success" value="เอกสาร"></td>
-										<td><input type="button" class="btn-success" value="แจ้งเตือน"></td>
-										<td><input type="button" class="btn-success" value="ลบ"></td>
+										<td><input type="button" class="btn btn-success" value="เอกสาร"></td>
+										<td><input type="button" class="btn btn-success" value="แจ้งเตือน"></td>
+										<td><input type="button" class="btn btn-success" value="ลบ"></td>
 								<?php
 										echo "</tr>";
 										$a = $a +1 ;
