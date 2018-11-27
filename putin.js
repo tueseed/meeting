@@ -1,7 +1,7 @@
 function put_in(check)
 {
 	//alert("Hi...." + data);
-	var y = "'" + check + "'";
+	var y = String(check);
 	var x = document.getElementById("check" + check).checked;
 	if(x == true)
 	{
