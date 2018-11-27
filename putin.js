@@ -1,7 +1,7 @@
-function put_in()
+function put_in(data)
 {
-	alert("Hi....");
-	document.getElementById("notice").value = group;
+	alert("Hi...." + data);
+	document.getElementById("notice").value = data;
 }
 function select()
 {
