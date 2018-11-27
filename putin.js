@@ -1,5 +1,5 @@
 function put_in(group)
 {
-	alert('sl;dnmgfd,kls;ng;l');
+	alert(group);
 	document.getElementById("notice").value = "fsdlkfjskldfmdsfsknlfd";
 }
