@@ -252,7 +252,7 @@
 									<th scope="col">ลิ้งค์เอกสาร</th>
 								</tr>
 								<?php
-									require('db/connect-db.php');
+									//require('db/connect-db.php');
 									$a = 1;
 									$sql_meeting = "SELECT * FROM tbl_meeting";
 									$query_meeting = mysqli_query($conn,$sql_meeting);
