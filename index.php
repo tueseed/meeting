@@ -266,7 +266,7 @@
 										echo "<td>".$obj_meet["meeting_date"]."</td>";
 										echo "<td>".$obj_meet["meeting_time"]."</td>";
 										echo "<td>".$obj_meet["meeting_time2"]."</td>";
-										echo "<td>".$obj_meet["meeting_topic"]."</td>";
+										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
 										echo "<td>".$obj_meet["notice"]."</td>";
 										echo "<td>".$obj_meet["link"]."</td>";
