@@ -1,5 +1,6 @@
-function put_in(data)
+function put_in()
 {
 	//alert("Hi...." + data);
-	document.getElementById("notice").value = data;
+	var x = document.getElementById("check").checked;
+	document.getElementById("notice").value = x;
 }
