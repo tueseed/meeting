@@ -147,7 +147,10 @@
 										<label for="meeting_place">สถานที่</label>
 										<input class="form-control" type="text" name="meeting_place" id="meeting_place"/>
 									</div>
-									
+									<div class="form-group">
+										<label>ลิ้งค์เอกสาร</label>       
+										<input class="form-control" type="text" name="link" id="link" />
+									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="form-group">
@@ -162,10 +165,6 @@
 										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
 										<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
 									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
 									<div class="form-group">
 										<label>แจ้งเตือน</label>       
 										<input class="form-control" type="text" name="notice" id="notice" />
@@ -211,7 +210,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-default" data-dismiss="modal">ตกลง</button>
+							<button type="submit" class="btn btn-default" data-dismiss="modal" onclick="send()">ตกลง</button>
 						</div>
 					</div>
 				</div>
