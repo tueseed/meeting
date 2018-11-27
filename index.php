@@ -194,12 +194,12 @@
 														echo "<td>".$obj["group_num"]."</td>";
 														echo "<td>".$obj["group_name"]."</td>";
 												?>
-												<!--<td>
+												<td>
 													<label class="switch">
 													  <input type="checkbox" onchange="put_in()">
 													  <span class="slider round"></span>
 													</label>
-												</td>-->
+												</td>
 												<?php
 														echo "</tr>";
 													}
