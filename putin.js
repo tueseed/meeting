@@ -5,11 +5,12 @@ function put_in(check,data)
 	var x = document.getElementById("check" + check).checked;
 	if(x == true)
 	{
-		document.getElementById("notice").value = document.getElementById("notice").value + y;
+		document.getElementById("notice").value = document.getElementById("notice").value + "," + y;
 	}
 	else if (x == false)
 	{
-		document.getElementById("notice").value = "";
+		var str = document.getElementById("notice").value ;
+		str = str.replace(y,"");
 	}
 	
 }
