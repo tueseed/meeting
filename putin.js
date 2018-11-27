@@ -1,4 +1,4 @@
-function put_in(group)
+function put_in()
 {
 	alert("Hi....");
 	document.getElementById("notice").value = group;
