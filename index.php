@@ -268,8 +268,11 @@
 										echo "<td>".$obj_meet["meeting_time2"]."</td>";
 										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
-										echo "<td>".$obj_meet["notice"]."</td>";
-										echo "<td>".$obj_meet["link"]."</td>";
+								?>
+										<td><input type="button" class="btn-success" value="เอกสาร"></td>
+										<td><input type="button" class="btn-success" value="แจ้งเตือน"></td>
+										<td><input type="button" class="btn-success" value="ลบ"></td>
+								<?php
 										echo "</tr>";
 										$a = $a +1 ;
 									}
