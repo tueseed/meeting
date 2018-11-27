@@ -126,7 +126,7 @@
 			</div>
 			<div class="modal fade" id="addtopic" role="dialog">
 				<script src="putin.js"></script>
-				<div class="modal-dialog">
+				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h4 class="modal-title">เพิ่มการประชุม</h4>
