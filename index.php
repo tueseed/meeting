@@ -234,5 +234,48 @@
 				</div>
 			</div>
 		</div>
+		<div class="mt-2 container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">หัวข้อการประชุม</th>
+									<th scope="col">วันที่</th>
+									<th scope="col">ตั้งแต่เวลา</th>
+									<th scope="col">ถึงเวลา</th>
+									<th scope="col">สถานที่</th>
+									<th scope="col">รายละเอียด/ผู้เข้าประชุม</th>
+									<th scope="col">แจ้งเตือน</th>
+									<th scope="col">ลิ้งค์เอกสาร</th>
+								</tr>
+								<?php
+									require('db/connect-db.php');
+									$a = 1;
+									$sql_meeting = "SELECT * FROM tbl_meeting";
+									$query_meeting = mysqli_query($conn,$sql_meeting);
+									while($obj_meet = mysqli_fetch_array($query_meeting))
+									{
+										echo "<tr>";
+										echo "td".$a."</td>";
+										echo "td".$obj_meet["meeting_topic"]."</td>";
+										echo "td".$obj_meet["meeting_date"]."</td>";
+										echo "td".$obj_meet["meeting_time"]."</td>";
+										echo "td".$obj_meet["meeting_time2"]."</td>";
+										echo "td".$obj_meet["meeting_topic"]."</td>";
+										echo "td".$obj_meet["meeting_detail"]."</td>";
+										echo "td".$obj_meet["notice"]."</td>";
+										echo "td".$obj_meet["link"]."</td>";
+										echo "</tr>"
+									}
+								?>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </hmtl>
