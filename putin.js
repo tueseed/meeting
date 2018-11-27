@@ -44,6 +44,6 @@ function send()
 }
 function del(meet_id)
 {
-	alert("คุณต้องการลบการประชุมเรื่อง ");
+	confirm("คุณต้องการลบการประชุมเรื่อง " + meet_id);
 
 }
