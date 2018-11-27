@@ -251,29 +251,29 @@
 									<th scope="col">แจ้งเตือน</th>
 									<th scope="col">ลิ้งค์เอกสาร</th>
 								</tr>
-								<tbody>
-									<?php
-										require('db/connect-db.php');
-										$a = 1;
-										$sql_meeting = "SELECT * FROM tbl_meeting";
-										$query_meeting = mysqli_query($conn,$sql_meeting);
-										while($obj_meet = mysqli_fetch_array($query_meeting))
-										{
-											echo "<tr>";
-											echo "td".$a."</td>";
-											echo "td".$obj_meet["meeting_topic"]."</td>";
-											echo "td".$obj_meet["meeting_date"]."</td>";
-											echo "td".$obj_meet["meeting_time"]."</td>";
-											echo "td".$obj_meet["meeting_time2"]."</td>";
-											echo "td".$obj_meet["meeting_topic"]."</td>";
-											echo "td".$obj_meet["meeting_detail"]."</td>";
-											echo "td".$obj_meet["notice"]."</td>";
-											echo "td".$obj_meet["link"]."</td>";
-											echo "</tr>";
-										}
-									?>
-								</tbody>
 							</thead>
+							<tbody>
+								<?php
+									require('db/connect-db.php');
+									$a = 1;
+									$sql_meeting = "SELECT * FROM tbl_meeting";
+									$query_meeting = mysqli_query($conn,$sql_meeting);
+									while($obj_meet = mysqli_fetch_array($query_meeting))
+									{
+										echo "<tr>";
+										echo "td".$a."</td>";
+										echo "td".$obj_meet["meeting_topic"]."</td>";
+										echo "td".$obj_meet["meeting_date"]."</td>";
+										echo "td".$obj_meet["meeting_time"]."</td>";
+										echo "td".$obj_meet["meeting_time2"]."</td>";
+										echo "td".$obj_meet["meeting_topic"]."</td>";
+										echo "td".$obj_meet["meeting_detail"]."</td>";
+										echo "td".$obj_meet["notice"]."</td>";
+										echo "td".$obj_meet["link"]."</td>";
+										echo "</tr>";
+									}
+								?>
+							</tbody>
 						</table>
 					</div>
 				</div>
