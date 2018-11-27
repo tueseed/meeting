@@ -10,7 +10,7 @@ function put_in(check,data)
 	else if (x == false)
 	{
 		var str = document.getElementById("notice").value ;
-		str = str.replace(y,"");
+		str = str.replace("|" + y,"");
 		document.getElementById("notice").value = str;
 	}
 	
