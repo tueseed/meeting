@@ -196,7 +196,7 @@
 												?>
 												<td>
 													<label class="switch">
-													  <input type="checkbox"  id="check<?php echo $obj["group_num"];?>" onchange="put_in(<?php echo $obj["group_num"];?>)">
+													  <input type="checkbox"  id="check<?php echo $obj["group_num"];?>" onchange="put_in(<?php echo $obj["group_name"];?>)">
 													  <span class="slider round"></span>
 													</label>
 												</td>
