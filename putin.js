@@ -15,3 +15,30 @@ function put_in(check,data)
 	}
 	
 }
+function send()
+{
+	var formData = new FormData();
+	formData.append('meeting_topic', $("#meeting_topic").val());
+	formData.append('meeting_date', $("#meeting_date").val());
+    formData.append('meeting_time', $("#meeting_time").val());
+    formData.append('meeting_time2', $("#meeting_time2").val());
+    formData.append('meeting_place', $("#meeting_place").val());
+    formData.append('meeting_detial', $("#meeting_detial").val());
+	formData.append('notice', $("#notice").val());
+	formData.append('link', $("#link").val());
+	$.ajax({
+			url: 'creat_meeting.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			ssuccess: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
+}

@@ -171,7 +171,7 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
-										<input class="form-control" type="text" name="meeting_detial" id="meeting_detial" />
+										<input class="form-control" type="text" name="meeting_detail" id="meeting_detail" />
 									</div>
 								</div>
 							</div>
