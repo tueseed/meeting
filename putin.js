@@ -1,5 +1,4 @@
-function put_in()
+function select()
 {
 	alert("Hi....");
-	document.getElementById("notice").value = "123456789";
 }
