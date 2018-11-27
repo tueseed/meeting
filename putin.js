@@ -42,3 +42,8 @@ function send()
                     }				
 			});
 }
+function del(meet_id)
+{
+	alert("คุณต้องการลบการประชุมเรื่อง ");
+
+}

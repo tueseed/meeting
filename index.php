@@ -269,7 +269,7 @@
 								?>
 										<td><input type="button" class="btn btn-success" value="เอกสาร"></td>
 										<td><input type="button" class="btn btn-success" value="แจ้งเตือน"></td>
-										<td><input type="button" class="btn btn-success" value="ลบ"></td>
+										<td><input type="button" class="btn btn-success" value="ลบ" onclick="del(<?php echo $obj_meet["id"];?>)"></td>
 								<?php
 										echo "</tr>";
 										$a = $a +1 ;
