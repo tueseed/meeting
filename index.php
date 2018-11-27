@@ -261,15 +261,15 @@
 									while($obj_meet = mysqli_fetch_array($query_meeting))
 									{
 										echo "<tr>";
-										echo "td".$a."</td>";
-										echo "td".$obj_meet["meeting_topic"]."</td>";
-										echo "td".$obj_meet["meeting_date"]."</td>";
-										echo "td".$obj_meet["meeting_time"]."</td>";
-										echo "td".$obj_meet["meeting_time2"]."</td>";
-										echo "td".$obj_meet["meeting_topic"]."</td>";
-										echo "td".$obj_meet["meeting_detail"]."</td>";
-										echo "td".$obj_meet["notice"]."</td>";
-										echo "td".$obj_meet["link"]."</td>";
+										echo "<td>".$a."</td>";
+										echo "<td>".$obj_meet["meeting_topic"]."</td>";
+										echo "<td>".$obj_meet["meeting_date"]."</td>";
+										echo "<td>".$obj_meet["meeting_time"]."</td>";
+										echo "<td>".$obj_meet["meeting_time2"]."</td>";
+										echo "<td>".$obj_meet["meeting_topic"]."</td>";
+										echo "<td>".$obj_meet["meeting_detail"]."</td>";
+										echo "<td>".$obj_meet["notice"]."</td>";
+										echo "<td>".$obj_meet["link"]."</td>";
 										echo "</tr>";
 									}
 								?>
