@@ -23,7 +23,7 @@ function send()
     formData.append('meeting_time', $("#meeting_time").val());
     formData.append('meeting_time2', $("#meeting_time2").val());
     formData.append('meeting_place', $("#meeting_place").val());
-    formData.append('meeting_detial', $("#meeting_detial").val());
+    formData.append('meeting_detail', $("#meeting_detail").val());
 	formData.append('notice', $("#notice").val());
 	formData.append('link', $("#link").val());
 	$.ajax({

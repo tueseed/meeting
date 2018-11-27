@@ -271,6 +271,7 @@
 										echo "<td>".$obj_meet["notice"]."</td>";
 										echo "<td>".$obj_meet["link"]."</td>";
 										echo "</tr>";
+										$a = $a +1 ;
 									}
 								?>
 							</tbody>
