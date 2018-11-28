@@ -1,5 +1,5 @@
 <?php
-		meet_id = "101";
+		$meet_id = "101";
 		$sel_meet = "SELECT * FROM tbl_meeting WHERE id = ".$meet_id;
 		$query_meet = mysqli_query($conn,$sel_meet);
 		$obj = mysqli_fetch_array($query_meet);
