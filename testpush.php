@@ -6,10 +6,13 @@
 		$obj = mysqli_fetch_array($query_meet);
 		$group_explode = explode("|",$obj["notice"]);
 		$id ='C6a54dc94c0f034766e58772ff9fd2994';
-			//$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group_explode[1]."'";
-			//$query_group = mysqli_query($conn,$sel_group);
-			//$obj_group = mysqli_fetch_array($query_group);
-		push($id);
+		foreach($group_explode as $group)
+		{
+			$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group."'";
+			$query_group = mysqli_query($conn,$sel_group);
+			$obj_group = mysqli_fetch_array($query_group);
+			push($obj_group["group_id"]);
+		}
 		function push($id)
 		{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
