@@ -29,7 +29,7 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
 {
     foreach ($events['events'] as $event) 
     {
-        if ($event['type'] == 'message' && $event['message']['type'] == 'text')
+        if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $event['source']['type'] == "group")
         {
             $replyToken = $event['replyToken']; //เก็บ reply token เอาไว้ตอบกลับ
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
