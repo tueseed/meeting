@@ -15,9 +15,7 @@
 			$obj_group = mysqli_fetch_array($query_group);
 			push($obj_group["group_id"]);
 		}
-		
-	}
-	function push($group_id)
+		function push($group_id)
 	{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
         $messages = [ 'type' => 'text','text' => "ทดสอบๆๆๆ";
@@ -34,4 +32,7 @@
         $result = curl_exec($ch);
         curl_close($ch); 	
 	}
+		
+	}
+	
 ?>
