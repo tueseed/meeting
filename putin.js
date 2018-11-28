@@ -44,6 +44,25 @@ function send()
 }
 function del(meet_id,meet_topic)
 {
-	confirm("คุณต้องการลบการประชุมเรื่อง " + meet_topic);
-
+	var alt = confirm("คุณต้องการลบการประชุมเรื่อง " + meet_topic);
+	if(alt == true)
+	{
+		var formData = new FormData();
+		formData.append('meet_id', meet_id);
+		$.ajax({
+			url: 'del_meeting.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			ssuccess: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
+	}
 }
