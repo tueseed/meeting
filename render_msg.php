@@ -59,7 +59,7 @@ function flex_msg()
 													"action": {
 																"type": "uri",
 																"label": "56456456",
-																"uri": "5464356"
+																"uri": "https://nutt-i.com/psqv2"
 															}
 												},
 												{
@@ -69,7 +69,7 @@ function flex_msg()
 													"action": {
 																"type": "uri",
 																"label": "45454545",
-																"uri": "4545424"
+																"uri": "https://nutt-i.com/psqv2"
 															}
 												},
 												{
