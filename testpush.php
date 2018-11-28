@@ -8,7 +8,7 @@
 		echo $obj["notice"]."<br>";
 		foreach($group_explode as $group)
 		{
-			$sel_group = "SELECT * FROM tbl_group WHERE group_name = ".$group;
+			$sel_group = "SELECT * FROM tbl_group WHERE group_name = ".trim($group);
 			$query_group = mysqli_query($conn,$sel_group);
 			$obj_group = mysqli_fetch_array($query_group);
 			echo $group."<br>";
