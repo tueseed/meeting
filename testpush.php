@@ -9,13 +9,13 @@
 			//$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group_explode[1]."'";
 			//$query_group = mysqli_query($conn,$sel_group);
 			//$obj_group = mysqli_fetch_array($query_group);
-		push();
-		function push()
+		push($id);
+		function push($id)
 		{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
         $messages = [ 'type' => 'text','text' => "jdakljkskljd"];
         $url = 'https://api.line.me/v2/bot/message/push';
-        $data = ['to' => 'C6a54dc94c0f034766e58772ff9fd2994','messages' => [$messages]];
+        $data = ['to' => $id,'messages' => [$messages]];
         $post = json_encode($data);
         $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
         $ch = curl_init($url);
