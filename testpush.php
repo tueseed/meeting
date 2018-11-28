@@ -1,5 +1,6 @@
 <?php
 		require('db/connect-db.php');
+		require('render_msg.php');
 		$meet_id = $_POST["meet_id"];
 		$sel_meet = "SELECT * FROM tbl_meeting WHERE id =".$meet_id;
 		$query_meet = mysqli_query($conn,$sel_meet);
@@ -16,7 +17,8 @@
 		function push($id)
 		{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
-        $messages = [ 'type' => 'text','text' => "jdakljkskljd"];
+        //$messages = [ 'type' => 'text','text' => "jdakljkskljd"];
+		$messages = flex_msg();
         $url = 'https://api.line.me/v2/bot/message/push';
         $data = ['to' => $id,'messages' => [$messages]];
         $post = json_encode($data);
