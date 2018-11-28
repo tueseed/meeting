@@ -268,7 +268,7 @@
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
 								?>
 										<td><input type="button" class="btn btn-success" value="เอกสาร"></td>
-										<td><input type="button" class="btn btn-success" value="แจ้งเตือน"></td>
+										<td><input type="button" class="btn btn-success" value="แจ้งเตือน" onclick="push_now(<?php echo $obj_meet["id"];?>)"></td>
 										<td><input type="button" class="btn btn-success" value="ลบ" onclick="del(<?php echo $obj_meet["id"].",'".$obj_meet["meeting_topic"]."'";?>)"></td>
 								<?php
 										echo "</tr>";

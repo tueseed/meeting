@@ -66,3 +66,26 @@ function del(meet_id,meet_topic)
 			});
 	}
 }
+function push_now(meet_id)
+{
+	var formData = new FormData();
+		formData.append('meet_id', meet_id);
+		$.ajax({
+			url: 'del_meeting.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			ssuccess: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
+	
+	
+	
+}
