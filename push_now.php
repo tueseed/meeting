@@ -13,7 +13,7 @@
 			$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group."'";
 			$query_group = mysqli_query($conn,$sel_group);
 			$obj_group = mysqli_fetch_array($query_group);
-			push($obj["group_id"]);
+			push($obj_group["group_id"]);
 		}
 		
 	}
