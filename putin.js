@@ -68,6 +68,7 @@ function del(meet_id,meet_topic)
 }
 function push_now(meet_id)
 {
+	alert('ส่งข้อความแจ้งเตือนตอนี้เหรอ');
 	var formData = new FormData();
 		formData.append('meet_id', meet_id);
 		$.ajax({
