@@ -34,7 +34,8 @@ if (!is_null($events['events'])) //check ค่าในตัวแปร $even
             $replyToken = $event['replyToken']; //เก็บ reply token เอาไว้ตอบกลับ
             $txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
             $first_char = substr($txtin,0,1);//ตัดเอาเฉพาะตัวอักษรตัวแรก
-         /*ลงทะเบียนกลุ่ม*/   
+			reply_msg($txtin,$replyToken);
+         /*ลงทะเบียนกลุ่ม   
             if($first_char == "/")//ถ้าตัวอักษรตัวแรกคือ /
             {
                 $semicol_pos = strpos($txtin,":");//เก็บค่าตำแหน่งของ : ในข้อความที่เข้ามา
