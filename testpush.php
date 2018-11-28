@@ -9,11 +9,11 @@
 			//$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group_explode[1]."'";
 			//$query_group = mysqli_query($conn,$sel_group);
 			//$obj_group = mysqli_fetch_array($query_group);
-			push($id);
+		push();
 		
 		
 		
-		function push($group_id)
+		function push()
 		{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
         $messages = [ 'type' => 'text','text' => $obj["notice"]];
