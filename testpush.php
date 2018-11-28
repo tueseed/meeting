@@ -1,4 +1,5 @@
 <?php
+		require('db/connect-db.php');
 		$meet_id = $_POST["meet_id"];
 		$sel_meet = "SELECT * FROM tbl_meeting WHERE id =".$meet_id;
 		$query_meet = mysqli_query($conn,$sel_meet);
