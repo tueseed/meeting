@@ -8,6 +8,7 @@
 		$query_meet = mysqli_query($conn,$sel_meet);
 		$obj = mysqli_fetch_array($query_meet);
 		$group_explode = explode("|",$obj["notice"]);
+		echo $obj["notice"];
 		foreach($group_explode as $group)
 		{
 			$sel_group = "SELECT * FROM tbl_group WHERE group_name = ".$group;
