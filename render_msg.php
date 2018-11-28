@@ -56,7 +56,7 @@ function flex_msg($topic,$d,$t,$t1,$place,$detail)
 																							{
 																								"type": "text",
 																								"text": "เรื่อง '.$topic.'",
-																								"weight": "bold",
+																								"wrap": true,																	
 																								"margin": "sm",
 																								"flex": 0
 																							}
@@ -72,8 +72,7 @@ function flex_msg($topic,$d,$t,$t1,$place,$detail)
 																							},
 																							{
 																								"type": "text",
-																								"text": "วันที่ '.$d.'",
-																								"weight": "bold",
+																								"text": "วันที่ '.$d.'",																								
 																								"margin": "sm",
 																								"flex": 0
 																							}
@@ -89,8 +88,7 @@ function flex_msg($topic,$d,$t,$t1,$place,$detail)
 																							},
 																							{
 																								"type": "text",
-																								"text":"เวลา '.$t.' ถึง '.$t1.'",
-																								"weight": "bold",
+																								"text":"เวลา '.$t.' ถึง '.$t1.'",																								
 																								"margin": "sm",
 																								"flex": 0
 																							}
@@ -106,8 +104,7 @@ function flex_msg($topic,$d,$t,$t1,$place,$detail)
 																							},
 																							{
 																								"type": "text",
-																								"text":"สถานที่ '.$place.'",
-																								"weight": "bold",
+																								"text":"สถานที่ '.$place.'",																								
 																								"margin": "sm",
 																								"flex": 0
 																							}
@@ -123,8 +120,7 @@ function flex_msg($topic,$d,$t,$t1,$place,$detail)
 																							},
 																							{
 																								"type": "text",
-																								"text": "ผู้เข้าประชุม",
-																								"weight": "bold",
+																								"text": "ผู้เข้าประชุม",																								
 																								"margin": "sm",
 																								"flex": 0
 																							}
