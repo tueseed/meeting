@@ -72,7 +72,7 @@ function push_now(meet_id)
 	var formData = new FormData();
 		formData.append('meet_id', meet_id);
 		$.ajax({
-			url: 'testpush.php',
+			url: 'push_now.php',
 			method: 'POST',
 			data: formData,
 			async: true,
