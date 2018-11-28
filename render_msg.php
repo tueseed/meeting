@@ -1,6 +1,6 @@
 <?php
 
-function flex_msg()
+function flex_msg($topic,$d,$t,$t1,$place,$detail)
 {	
 	$json1 = '{
 				"type":"flex",
@@ -55,7 +55,7 @@ function flex_msg()
 																							},
 																							{
 																								"type": "text",
-																								"text": "เรื่อง",
+																								"text": "เรื่อง '.$topic.'",
 																								"weight": "bold",
 																								"margin": "sm",
 																								"flex": 0
@@ -72,7 +72,7 @@ function flex_msg()
 																							},
 																							{
 																								"type": "text",
-																								"text": "วันที่",
+																								"text": "วันที่ '.$d.'",
 																								"weight": "bold",
 																								"margin": "sm",
 																								"flex": 0
@@ -89,7 +89,7 @@ function flex_msg()
 																							},
 																							{
 																								"type": "text",
-																								"text":"เวลา",
+																								"text":"เวลา '.$t.' ถึง '.$t1.'",
 																								"weight": "bold",
 																								"margin": "sm",
 																								"flex": 0
@@ -106,7 +106,7 @@ function flex_msg()
 																							},
 																							{
 																								"type": "text",
-																								"text":"สถานที่",
+																								"text":"สถานที่ '.$place.'",
 																								"weight": "bold",
 																								"margin": "sm",
 																								"flex": 0
@@ -134,14 +134,7 @@ function flex_msg()
 															},
 															{
 																"type": "text",
-																"text": "ผจก.พธร.,ffddlv,ds;vdv",
-																"wrap": true,
-																"color": "#aaaaaa",
-																"size": "xxs"
-															},
-															{
-																"type": "text",
-																"text": "รายละเอียด ดากสวฟ่าดสวดทาสฟทวดเห",
+																"text": "'.$detail.'",
 																"wrap": true,
 																"color": "#aaaaaa",
 																"size": "xxs"

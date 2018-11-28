@@ -12,13 +12,13 @@
 			$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group."'";
 			$query_group = mysqli_query($conn,$sel_group);
 			$obj_group = mysqli_fetch_array($query_group);
-			push($obj_group["group_id"]);
+			push($obj_group["group_id"],$obj["meeting_topic"],$obj["meeting_date"],$obj["meeting_time"],$obj["meeting_time2"],$obj["meeting_place"],$obj["meeting_detail"]);
 		}
-		function push($id)
+		function push($id,$topic,$d,$t,$t1,$place,$detail)
 		{
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
         //$messages = [ 'type' => 'text','text' => "jdakljkskljd"];
-		$messages = flex_msg();
+		$messages = flex_msg($topic,$d,$t,$t1,$place,$detail);
         $url = 'https://api.line.me/v2/bot/message/push';
         $data = ['to' => $id,'messages' => [$messages]];
         $post = json_encode($data);
