@@ -1,6 +1,7 @@
 <?php
+		$meet_id = $_POST["meet_id"];
 		$access_token = '49sz8gFlKIm8wRU5fkeJF3VFZ0+RVe9vwv56SD68F0njV69PJCXRA3FyanXUDFx+THLRYmp3PscYBPBnTLdJyP/H61NkMX4VvcqBD3xageuhXzEq7QZyk02ie+QEvhdGtsDHNPLdV1XR2XnGO62U8gdB04t89/1O/w1cDnyilFU=';
-        $messages = [ 'type' => 'text','text' => "ทดสอบๆๆๆ"];
+        $messages = [ 'type' => 'text','text' => $meet_id];
         $url = 'https://api.line.me/v2/bot/message/push';
         $data = ['to' => 'C6a54dc94c0f034766e58772ff9fd2994','messages' => [$messages]];
         $post = json_encode($data);
