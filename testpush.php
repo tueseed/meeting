@@ -5,13 +5,12 @@
 		$query_meet = mysqli_query($conn,$sel_meet);
 		$obj = mysqli_fetch_array($query_meet);
 		$group_explode = explode("|",$obj["notice"]);
-		foreach($group_explode as $group)
-		{
-			$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group."'";
+		
+			$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group_explode[1]."'";
 			$query_group = mysqli_query($conn,$sel_group);
 			$obj_group = mysqli_fetch_array($query_group);
 			push($obj_group["group_id"]);
-		}
+		
 		
 		
 		function push($group_id)
