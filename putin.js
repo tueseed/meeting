@@ -98,6 +98,6 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 	document.getElementById("meeting_time2").value = t1;
 	document.getElementById("meeting_place").value = place;
 	document.getElementById("meeting_detail").value = detail;
-	document.getElementById("link").value = notice;
-	document.getElementById("notice").value = link;
+	document.getElementById("link").value = link;
+	document.getElementById("notice").value = notice;
 }
