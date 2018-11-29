@@ -122,31 +122,7 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
                     }				
 			});
 }
-function test(notice)
+function reset_check()
 {
-	
-	var formData = new FormData();
-		formData.append('notice', notice);
-		$.ajax({
-			url: 'checknotice.php',
-			method: 'POST',
-			data: formData,
-			async: true,
-			cache: false,
-			processData: false,
-			contentType: false,
-			success: function(response) {
-						var obj = jQuery.parseJSON(response);
-						var i = 0;
-						while(obj[i])
-						{
-							var txt = txt + "กลุ่มที่ " + i + "คือ" +obj[i];
-							i++;
-						}
-                        alert(txt);
-                    },
-                    complete: function() {
-                        location.reload();
-                    }				
-			});
+	location.reload();
 }
