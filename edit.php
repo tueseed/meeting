@@ -254,8 +254,9 @@
 										echo "<td>".$obj_meet["meeting_time2"]."</td>";
 										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
+										$data = $obj_meet["meeting_topic"].",".$obj_meet["meeting_date"].",".$obj_meet["meeting_time"].",".$obj_meet["meeting_time2"].",".$obj_meet["meeting_place"].",".$obj_meet["meeting_detail"].",".$obj_meet["notice"].",".$obj_meet["link"];
 								?>
-										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit()"></td>
+										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit(<?php echo $data;?>)"></td>
 								<?php
 										echo "</tr>";
 										$a = $a +1 ;
