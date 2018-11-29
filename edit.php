@@ -175,6 +175,11 @@
 										<label>แจ้งเตือน</label>       
 										<input class="form-control" type="text" name="notice" id="notice" readonly >
 									</div>
+									<div class="form-group">
+										<label>test</label>    
+										
+										<input class="form-control" type="text" name="test" id="test" readonly value="afasfsf" >
+									</div>
 								</div>
 							</div>
 							<div class="row">
@@ -256,7 +261,7 @@
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
 										$data = "'".$obj_meet["meeting_topic"]."','".$obj_meet["meeting_date"]."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
 								?>
-										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit(<?php echo $data;?>)"></td>
+										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic?data=15" onclick="send_edit(<?php echo $data;?>)"></td>
 								<?php
 										echo "</tr>";
 										$a = $a +1 ;
