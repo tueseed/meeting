@@ -101,7 +101,23 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 	document.getElementById("link").value = link;
 	document.getElementById("notice").value = notice;
 }
-function test()
+function test(notice)
 {
-	alert("ไงล่ะ");
-}
+	
+	var formData = new FormData();
+		formData.append('notice', notice);
+		$.ajax({
+			url: 'checknotice.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			ssuccess: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
