@@ -2,7 +2,7 @@
 	require('db/connect-db.php');
 	$sql = "SELECT * FROM tbl_meeting";
 	$query = mysqli_query($conn,$sql);
-	while($ojb = mysqli_fetch_array($query))
+	while($obj = mysqli_fetch_array($query))
 	{
 		date_default_timezone_set("Asia/Bangkok");
 		$d1 = strtotime($obj["meeting_date"]);
