@@ -37,7 +37,7 @@
 	<script>
 	function setURL(url)
 	{
-		document.getElementById('iframe').src = url;
+		document.getElementById('display').src = url;
 	}
 	</script>
 	<body>
@@ -56,7 +56,7 @@
 				<input type="button" class="btn btn-success btn-block" value="แก้ไขการประชุม" >
 			</div>
 			<div class="col-lg-10">
-				<iframe src="meeting.php" name="display" frameborder="0" width="100%">
+				<iframe src="meeting.php" name="display" id="display" frameborder="0" width="100%">
 			</div>
 		</div>
 	</body>
