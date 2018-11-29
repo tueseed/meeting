@@ -179,7 +179,7 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label>ลิ้งค์เอกสาร</label>       
-										<input class="form-control" type="text" name="link" id="link"  Username: <input type="text" name="usrname" required >
+										<input class="form-control" type="text" name="link" id="link" required >
 									</div>
 								</div>
 								<div class="col-lg-6">
