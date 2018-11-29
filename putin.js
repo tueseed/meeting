@@ -90,3 +90,7 @@ function push_now(meet_id)
 	
 	
 }
+function send_edit()
+{
+	document.getElementById("meeting_topic").value = "jkljiojkljoi";
+}
