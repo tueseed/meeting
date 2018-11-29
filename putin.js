@@ -100,6 +100,30 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 	document.getElementById("meeting_detail").value = detail;
 	document.getElementById("link").value = link;
 	document.getElementById("notice").value = notice;
+	var formData = new FormData();
+		formData.append('notice', notice);
+		$.ajax({
+			url: 'checknotice.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+						var obj = jQuery.parseJSON(response);
+						var i = 0;
+						while(obj[i])
+						{
+							document.getElementById("check" + obj[i]).checked = true;
+							i++;
+						}
+                        
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
 }
 function test(notice)
 {
