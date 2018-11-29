@@ -172,7 +172,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center" >
 				<div class="col-lg-1" style="background-color:#9a9898;">
-					<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; MENU
+					<span style="cursor:pointer" onclick="openNav()">&#9776; MENU
 					</span>
 				</div>
 				<div class="col-lg-10" style="background-color:#b461fb;">
