@@ -119,9 +119,6 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 							i++;
 						}
                         
-                    },
-                    complete: function() {
-                        location.reload();
                     }				
 			});
 }
