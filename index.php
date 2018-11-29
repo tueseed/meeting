@@ -171,11 +171,11 @@
 		</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
-				<div class="col-lg-1" style="background-color:#b461fb;">
-					<h3><span onclick="openNav()">&#9776; MENU
+				<div class="col-lg-2" style="background-color:#b461fb;">
+					<h3><span style="cursor:pointer" onclick="openNav()">&#9776; MENU
 					</span></h3>
 				</div>
-				<div class="col-lg-11" style="background-color:#b461fb;">
+				<div class="col-lg-10" style="background-color:#b461fb;">
 					<h3>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h3>
 				</div>
 			</div>
