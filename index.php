@@ -52,8 +52,8 @@
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-2">
 				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
-				<input type="button" class="btn btn-success btn-block" target="display" value="ประชาสัมพันธ์" onclick="setURL('edit.php')">
-				<input type="button" class="btn btn-success btn-block" value="แก้ไขการประชุม" >
+				<input type="button" class="btn btn-success btn-block"  value="ประชาสัมพันธ์" >
+				<input type="button" class="btn btn-success btn-block" target="display" value="แก้ไขการประชุม" onclick="setURL('edit.php')">
 			</div>
 			<div class="col-lg-10">
 				<iframe src="meeting.php" name="display" id="display" frameborder="0" width="100%">
