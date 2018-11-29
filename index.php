@@ -46,10 +46,12 @@
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-3">
+			<div class="col-lg-2">
 				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
+				<input type="button" href="www.google.co.th" class="btn btn-success btn-block" target="display" value="ประชาสัมพันธ์" >
+				<input type="button" class="btn btn-success btn-block" value="แก้ไขการประชุม" >
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-10">
 				<iframe src="meeting.php" name="display" frameborder="0" width="100%">
 			</div>
 		</div>
