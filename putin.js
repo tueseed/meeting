@@ -17,6 +17,7 @@ function put_in(check,data)
 }
 function send()
 {
+	e.preventDefault();
 	var formData = new FormData();
 	formData.append('meeting_topic', $("#meeting_topic").val());
 	formData.append('meeting_date', $("#meeting_date").val());
