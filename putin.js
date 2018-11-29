@@ -131,7 +131,7 @@ function reset_check()
 function edit()
 {
 	var formData = new FormData();
-	formData.append('id', $("#id").val());
+	formData.append('id', $("#meeting_id").val());
 	formData.append('meeting_topic', $("#meeting_topic").val());
 	formData.append('meeting_date', $("#meeting_date").val());
     formData.append('meeting_time', $("#meeting_time").val());
