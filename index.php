@@ -170,8 +170,8 @@
 		  <a href="#">Contact</a>
 		</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row row-center">
-				<div class="col-lg-2" >
+			<div class="row row-center" >
+				<div class="col-lg-2" style="background-color:#9a9898;">
 					<h3><span style="cursor:pointer" onclick="openNav()">&#9776; MENU
 					</span></h3>
 				</div>
