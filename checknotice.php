@@ -1,10 +1,11 @@
 <?php
 	$notice = $_POST["notice"];
 	$group_explode = explode("|",$notice);
+	$result = array();
 	foreach($group_explode as $group)
 		{
 			//$group_return = $group_return."/".$group;
 			array_push($result,$group);
 		}
-	echo json_encode($group_explode);
+	echo json_encode($result);
 ?>
