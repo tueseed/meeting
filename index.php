@@ -31,31 +31,315 @@
 				width: 100%;
 				height: 100%;
 			}
+			.table-responsive 
+			{
+				display: block;
+				max-height: 200px;
+				overflow-y: auto;
+				-ms-overflow-style: -ms-autohiding-scrollbar;
+			}
+			.switch 
+			{
+				position: relative;
+				display: inline-block;
+				width: 60px;
+				height: 34px;
+			}
+			.switch input 
+			{ 
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+			.slider 
+			{
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+			.slider:before
+			{
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+			input:checked + .slider 
+			{
+				background-color: #2196F3;
+			}
+			input:focus + .slider 
+			{
+				box-shadow: 0 0 1px #2196F3;
+			}
+			input:checked + .slider:before 
+			{
+				-webkit-transform: translateX(26px);
+				-ms-transform: translateX(26px);
+				transform: translateX(26px);
+			}
+			/* Rounded sliders */
+			.slider.round 
+			{
+			  border-radius: 34px;
+			}
+			.slider.round:before 
+			{
+			  border-radius: 50%;
+			}
+			.sidenav 
+			{
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+
+			.sidenav a 
+			{
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+
+			.sidenav a:hover 
+			{
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn 
+			{
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+
+			@media screen and (max-height: 450px) 
+			{
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}
+			}
 		</style>
 	</head>
 	<script>
-	function setURL(url)
+	function openNav() 
 	{
-		document.getElementById('display').src = url;
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
 	}
 	</script>
 	<body>
-		
+		<?php
+			$server = "us-cdbr-iron-east-01.cleardb.net";
+			$username = "b946a03b24557c";
+			$password = "0000fb9a";
+			$db = "heroku_91b59e978ea198b";
+			$conn = new mysqli($server, $username, $password, $db);
+			mysqli_query($conn, "SET NAMES utf8");
+		?>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
+		</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
-				<div class="col-lg-12" style="background-color:#b461fb;">
+				<div class="col-lg-1" style="background-color:#b461fb;">
+					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+				</div>
+				<div class="col-lg-11" style="background-color:#b461fb;">
 					<h3>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h3>
 				</div>
 			</div>
 		</div>
 		<div class="mt-2 container-fluid">
-			<div class="col-lg-2">
-				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
-				<input type="button" class="btn btn-success btn-block"  value="ประชาสัมพันธ์" >
-				<input type="button" class="btn btn-success btn-block" target="display" value="แก้ไขการประชุม" onclick="setURL('edit.php')">
+			<div class="row row-center">
+				<div class="col-lg-4 offset-lg-4">
+					<input type="button" class="btn btn-success" data-toggle="modal" href="#addtopic" value="สร้างการประชุม">
+				</div>
 			</div>
-			<div class="col-lg-10">
-				<iframe src="meeting.php" name="display" id="display" frameborder="0" width="100%">
+			<div class="modal fade" id="addtopic" role="dialog">
+				<script src="putin.js"></script>
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">เพิ่มการประชุม</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_topic">หัวข้อการประชุม</label>
+										<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" required />
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_date">วันที่</label>
+										<input class="form-control" type="date" name="meeting_date" id="meeting_date" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_time">ตั้งแต่เวลา</label>
+										<input class="form-control" type="time" name="meeting_time" id="meeting_time" required >
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_time2">ถึงเวลา</label>
+										<input class="form-control" type="time" name="meeting_time2" id="meeting_time2" required >
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_place">สถานที่</label>
+										<input class="form-control" type="text" name="meeting_place" id="meeting_place" required >
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
+										<input class="form-control" type="text" name="meeting_detail" id="meeting_detail" required >
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label>ลิ้งค์เอกสาร</label>       
+										<input class="form-control" type="text" name="link" id="link" required >
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label>แจ้งเตือน</label>       
+										<input class="form-control" type="text" name="notice" id="notice" readonly >
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="table-responsive">
+										<table class="table table-hover">
+											<thead class="thead-dark">
+												<tr>
+													<th scope="col">Gr.no</th>
+													<th scope="col">ชื่อกลุ่ม</th>
+													<th scope="col">การแจ้งเตือน</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php
+													require('db/connect-db.php');
+													$sql_group = "SELECT * FROM tbl_group";
+													$query_group = mysqli_query($conn,$sql_group);
+													while($obj = mysqli_fetch_array($query_group))
+													{
+														echo "<tr>";
+														echo "<td>".$obj["group_num"]."</td>";
+														echo "<td>".$obj["group_name"]."</td>";
+												?>
+												<td>
+													<label class="switch">
+													  <input type="checkbox"  id="check<?php echo $obj["group_num"];?>" onchange="put_in(<?php echo $obj["group_num"].",'".$obj["group_name"]."'";?>)">
+													  <span class="slider round"></span>
+													</label>
+												</td>
+												<?php
+														echo "</tr>";
+													}
+												?>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-default" data-dismiss="modal" onclick="send()">ตกลง</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt-2 container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">หัวข้อการประชุม</th>
+									<th scope="col">วันที่</th>
+									<th scope="col">ตั้งแต่เวลา</th>
+									<th scope="col">ถึงเวลา</th>
+									<th scope="col">สถานที่</th>
+									<th scope="col">รายละเอียด/ผู้เข้าประชุม</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+									require('db/connect-db.php');
+									$a = 1;
+									$sql_meeting = "SELECT * FROM tbl_meeting";
+									$query_meeting = mysqli_query($conn,$sql_meeting);
+									while($obj_meet = mysqli_fetch_array($query_meeting))
+									{
+										echo "<tr>";
+										echo "<td>".$a."</td>";
+										echo "<td>".$obj_meet["meeting_topic"]."</td>";
+										echo "<td>".$obj_meet["meeting_date"]."</td>";
+										echo "<td>".$obj_meet["meeting_time"]."</td>";
+										echo "<td>".$obj_meet["meeting_time2"]."</td>";
+										echo "<td>".$obj_meet["meeting_place"]."</td>";
+										echo "<td>".$obj_meet["meeting_detail"]."</td>";
+								?>
+										<td><input type="button" class="btn btn-success" value="เอกสาร"></td>
+										<td><input type="button" class="btn btn-success" value="แจ้งเตือน" onclick="push_now(<?php echo $obj_meet["id"];?>)"></td>
+										<td><input type="button" class="btn btn-success" value="ลบ" onclick="del(<?php echo $obj_meet["id"].",'".$obj_meet["meeting_topic"]."'";?>)"></td>
+								<?php
+										echo "</tr>";
+										$a = $a +1 ;
+									}
+								?>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
