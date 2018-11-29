@@ -116,7 +116,13 @@ function test(notice)
 			contentType: false,
 			success: function(response) {
 						var obj = jQuery.parseJSON(response);
-                        alert(obj[0]);
+						var i = 0;
+						while(obj[i])
+						{
+							var txt = txt + "กลุ่มที่ " + i + "คือ" +obj[i];
+							i++;
+						}
+                        alert(txt);
                     },
                     complete: function() {
                         location.reload();
