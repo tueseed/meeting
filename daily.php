@@ -5,7 +5,7 @@
 	while($ojb = mysqli_fetch_array($query))
 	{
 		date_default_timezone_set("Asia/Bangkok");
-		$d1 = strtotime($obj["meetinf_date"]);
+		$d1 = strtotime($obj["meeting_date"]);
 		$d2 = date('d-m-Y',$d1);
 		$today = date('d-m-Y');
 		$da = date_create($d2);
