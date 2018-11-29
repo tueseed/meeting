@@ -185,7 +185,7 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label>แจ้งเตือน</label>       
-										<input class="form-control" type="text" name="notice" id="notice" disable />
+										<input class="form-control" type="text" name="notice" id="notice" readonly />
 									</div>
 								</div>
 							</div>
