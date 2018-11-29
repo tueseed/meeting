@@ -6,5 +6,5 @@
 			//$group_return = $group_return."/".$group;
 			array_push($result,$group);
 		}
-	echo $group_explode;
+	echo json_encode($result);
 ?>
