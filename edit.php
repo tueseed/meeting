@@ -330,7 +330,9 @@
 										echo "<td>".$obj_meet["meeting_time2"]."</td>";
 										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
-										$data = "'".$obj_meet["id"]."','".$obj_meet["meeting_topic"]."','".$obj_meet["meeting_date"]."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
+										$date1 = strtotime($obj_meet["meeting_date"]);
+										$date2 = date("Y-m-d",$date1);
+										$data = "'".$obj_meet["id"]."','".$obj_meet["meeting_topic"]."','".$date2."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
 								?>
 										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit(<?php echo $data;?>)"></td>
 										<td><input type="button" class="btn btn-success" value="ลอง" onclick="test(<?php echo "'".$obj_meet["notice"]."'";?>)"></td>
