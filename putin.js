@@ -34,7 +34,7 @@ function send()
 			cache: false,
 			processData: false,
 			contentType: false,
-			ssuccess: function(response) {
+			success: function(response) {
                         alert(response);
                     },
                     complete: function() {
@@ -57,7 +57,7 @@ function del(meet_id,meet_topic)
 			cache: false,
 			processData: false,
 			contentType: false,
-			ssuccess: function(response) {
+			success: function(response) {
                         alert(response);
                     },
                     complete: function() {
@@ -79,7 +79,7 @@ function push_now(meet_id)
 			cache: false,
 			processData: false,
 			contentType: false,
-			ssuccess: function(response) {
+			success: function(response) {
                         alert(response);
                     },
                     complete: function() {
@@ -103,6 +103,22 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 }
 function test(notice)
 {
-	alert(notice);
 	
+	var formData = new FormData();
+		formData.append('notice', notice);
+		$.ajax({
+			url: 'checknotice.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
 }
