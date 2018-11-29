@@ -121,3 +121,4 @@ function test(notice)
                         location.reload();
                     }				
 			});
+}
