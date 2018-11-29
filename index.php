@@ -48,7 +48,7 @@
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-2">
 				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
-				<input type="button" href="www.google.co.th" class="btn btn-success btn-block" target="display" value="ประชาสัมพันธ์" >
+				<input type="button" class="btn btn-success btn-block"><a href="www.google.co.th" target="display">ประชาสัมพันธ์</a></input>
 				<input type="button" class="btn btn-success btn-block" value="แก้ไขการประชุม" >
 			</div>
 			<div class="col-lg-10">
