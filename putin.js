@@ -101,3 +101,7 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 	document.getElementById("link").value = link;
 	document.getElementById("notice").value = notice;
 }
+function test()
+{
+	alert("ไงล่ะ");
+}
