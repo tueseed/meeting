@@ -115,7 +115,8 @@ function test(notice)
 			processData: false,
 			contentType: false,
 			success: function(response) {
-                        alert(response);
+						var obj = jQuery.parseJSON(response);
+                        alert(obj[1]);
                     },
                     complete: function() {
                         location.reload();
