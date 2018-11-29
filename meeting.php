@@ -111,13 +111,6 @@
 			$conn = new mysqli($server, $username, $password, $db);
 			mysqli_query($conn, "SET NAMES utf8");
 		?>
-		<div class="container-fluid" style="background-color:#b461fb;">
-			<div class="row row-center">
-				<div class="col-lg-12" style="background-color:#b461fb;">
-					<h3>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h3>
-				</div>
-			</div>
-		</div>
 		<div class="mt-2 container-fluid">
 			<div class="row row-center">
 				<div class="col-lg-4 offset-lg-4">

@@ -47,7 +47,7 @@
 		</div>
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-3">
-				<input type="button" class="btn btn-default" >
+				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
 			</div>
 			<div class="col-lg-9">
 				<iframe src="meeting.php" name="display" frameborder="0" width="100%">
