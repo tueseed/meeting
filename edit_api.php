@@ -14,8 +14,7 @@
 	$link = $_POST["link"];
 	$date1 = strtotime($meeting_date);
 	$date2 = date("d-m-Y",$date1);
-	$sql_update_meet = "UPDATE tbl_meeting SET meeting_topic='$meeting_topic',meeting_date='$date2',
-	meeting_time='$meeting_time',meeting_time2='$meeting_time2',meeting_place='$meeting_place',meeting_detail='$meeting_detail',notice='$notice',link='$link' WHERE id='".$id."'";
+	$sql_update_meet = "UPDATE tbl_meeting SET meeting_topic='$meeting_topic',meeting_date='$date2',meeting_time='$meeting_time',meeting_time2='$meeting_time2',meeting_place='$meeting_place',meeting_detail='$meeting_detail',notice='$notice',link='$link' WHERE id='".$meeting_id."'";
 	mysqli_query($conn,$sql_update_meet);
 	echo "ปรับปรุงข้อมูลสำเร็จ";
 	}
