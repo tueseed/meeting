@@ -35,6 +35,10 @@
 		</style>
 	</head>
 	<script>
+	function setURL(url)
+	{
+		document.getElementById('iframe').src = url;
+	}
 	</script>
 	<body>
 		
@@ -48,7 +52,7 @@
 		<div class="mt-2 container-fluid">
 			<div class="col-lg-2">
 				<input type="button" class="btn btn-success btn-block" value="การประชุม" >
-				<input type="button" class="btn btn-success btn-block" target="display" value="ประชาสัมพันธ์" onclick="window.location.href='http://www.google.co.th'">
+				<input type="button" class="btn btn-success btn-block" target="display" value="ประชาสัมพันธ์" onclick="setURL('https://www.google.co.th')">
 				<input type="button" class="btn btn-success btn-block" value="แก้ไขการประชุม" >
 			</div>
 			<div class="col-lg-10">
