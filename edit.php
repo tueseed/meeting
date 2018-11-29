@@ -175,11 +175,6 @@
 										<label>แจ้งเตือน</label>       
 										<input class="form-control" type="text" name="notice" id="notice" readonly >
 									</div>
-									<div class="form-group">
-										<label>test</label>    
-										
-										<input class="form-control" type="text" name="test" id="test" readonly value="afasfsf" >
-									</div>
 								</div>
 							</div>
 							<div class="row">
