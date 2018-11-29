@@ -172,7 +172,7 @@
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center">
 				<div class="col-lg-1" style="background-color:#b461fb;">
-					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+					<span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 				</div>
 				<div class="col-lg-11" style="background-color:#b461fb;">
 					<h3>ระบบแจ้งเตือนการประชุมผ่านแอพพลิเคชั่นไลน์</h3>
