@@ -191,7 +191,15 @@
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="form-group">
-										<input id="id" name="id" type="hidden">
+										
+										<label for="meeting_id">ID</label>
+										<input class="form-control" type="text" name="meeting_id" id="meeting_id"/>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
 										<label for="meeting_topic">หัวข้อการประชุม</label>
 										<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" required />
 									</div>

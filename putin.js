@@ -92,7 +92,7 @@ function push_now(meet_id)
 }
 function send_edit(id,topic,d,t,t1,place,detail,notice,link)
 {
-	document.getElementById("id").value = id;
+	document.getElementById("meeting_id").value = id;
 	document.getElementById("meeting_topic").value = topic;
 	document.getElementById("meeting_date").value = d;
 	document.getElementById("meeting_time").value = t;
