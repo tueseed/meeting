@@ -143,7 +143,7 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_date">วันที่</label>
-										<input class="form-control" type="date" name="meeting_date" id="meeting_date" required />
+										<input class="form-control" type="date" name="meeting_date" id="meeting_date" required>
 									</div>
 								</div>
 							</div>
@@ -151,13 +151,13 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_time">ตั้งแต่เวลา</label>
-										<input class="form-control" type="time" name="meeting_time" id="meeting_time" required />
+										<input class="form-control" type="time" name="meeting_time" id="meeting_time" required >
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_time2">ถึงเวลา</label>
-										<input class="form-control" type="time" name="meeting_time2" id="meeting_time2" required />
+										<input class="form-control" type="time" name="meeting_time2" id="meeting_time2" required >
 									</div>
 								</div>
 							</div>
@@ -165,13 +165,13 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_place">สถานที่</label>
-										<input class="form-control" type="text" name="meeting_place" id="meeting_place" required />
+										<input class="form-control" type="text" name="meeting_place" id="meeting_place" required >
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="meeting_detial">รายละเอียด/ผู้เข้าประชุม</label>
-										<input class="form-control" type="text" name="meeting_detail" id="meeting_detail" required />
+										<input class="form-control" type="text" name="meeting_detail" id="meeting_detail" required >
 									</div>
 								</div>
 							</div>
@@ -179,13 +179,13 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label>ลิ้งค์เอกสาร</label>       
-										<input class="form-control" type="text" name="link" id="link"  Username: <input type="text" name="usrname" required />
+										<input class="form-control" type="text" name="link" id="link"  Username: <input type="text" name="usrname" required >
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label>แจ้งเตือน</label>       
-										<input class="form-control" type="text" name="notice" id="notice" readonly />
+										<input class="form-control" type="text" name="notice" id="notice" readonly >
 									</div>
 								</div>
 							</div>
