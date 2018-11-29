@@ -90,8 +90,9 @@ function push_now(meet_id)
 	
 	
 }
-function send_edit(topic,d,t,t1,place,detail,notice,link)
+function send_edit(id,topic,d,t,t1,place,detail,notice,link)
 {
+	document.getElementById("id").value = id;
 	document.getElementById("meeting_topic").value = topic;
 	document.getElementById("meeting_date").value = d;
 	document.getElementById("meeting_time").value = t;
@@ -125,4 +126,36 @@ function send_edit(topic,d,t,t1,place,detail,notice,link)
 function reset_check()
 {
 	location.reload();
+}
+
+function edit()
+{
+	var formData = new FormData();
+	formData.append('id', $("#id").val());
+	formData.append('meeting_topic', $("#meeting_topic").val());
+	formData.append('meeting_date', $("#meeting_date").val());
+    formData.append('meeting_time', $("#meeting_time").val());
+    formData.append('meeting_time2', $("#meeting_time2").val());
+    formData.append('meeting_place', $("#meeting_place").val());
+    formData.append('meeting_detail', $("#meeting_detail").val());
+	formData.append('notice', $("#notice").val());
+	formData.append('link', $("#link").val());
+	$.ajax({
+			url: 'edit_api.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
+	
+	
+	
 }

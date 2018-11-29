@@ -191,6 +191,7 @@
 							<div class="row">
 								<div class="col-lg-6">
 									<div class="form-group">
+										<input id="id" name="id" type="hidden">
 										<label for="meeting_topic">หัวข้อการประชุม</label>
 										<input class="form-control" type="text" name="meeting_topic" id="meeting_topic" placeholder="หัวข้อการประชุม" required />
 									</div>
@@ -283,7 +284,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-default" data-dismiss="modal" onclick="send()">ตกลง</button>
+							<button type="submit" class="btn btn-default" data-dismiss="modal" onclick="edit()">ตกลง</button>
 						</div>
 					</div>
 				</div>
@@ -321,7 +322,7 @@
 										echo "<td>".$obj_meet["meeting_time2"]."</td>";
 										echo "<td>".$obj_meet["meeting_place"]."</td>";
 										echo "<td>".$obj_meet["meeting_detail"]."</td>";
-										$data = "'".$obj_meet["meeting_topic"]."','".$obj_meet["meeting_date"]."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
+										$data = "'".$obj_meet["id"]."'".$obj_meet["meeting_topic"]."','".$obj_meet["meeting_date"]."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
 								?>
 										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit(<?php echo $data;?>)"></td>
 										<td><input type="button" class="btn btn-success" value="ลอง" onclick="test(<?php echo "'".$obj_meet["notice"]."'";?>)"></td>
