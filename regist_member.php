@@ -41,18 +41,14 @@
 	<div class="mt-2 container-fluid">
 		<div class="row row-center">
 			<div class="col-lg-12">
-				<input type="text" class="form-control" id="uid">
+				<input type="text" class="form-control" id="uid" readonly>
 			</div>
 		</div>
 	</div>
 </body>
-<!--<script type="text/javascript">
-	setTimeout(function(){formAutoSubmit()}, 3000);
-	function formAutoSubmit () 
-	{
-		var frm = document.getElementById("formcheck");
-		frm.submit();
-	}
+<script type="text/javascript">
+	setTimeout(function(){check_member()}, 3000);
+	
     
-</script>-->
+</script>
 </html>
