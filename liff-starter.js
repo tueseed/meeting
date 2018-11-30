@@ -40,7 +40,7 @@ function check_member()
 							document.getElementById("name_lastname").value = obj[0].group_name;
 							document.getElementById("pos").value = obj[0].pos;
 							document.getElementById("office").value = obj[0].office;
-							document.getElementById("btn").disabled = false;
+							document.getElementById("btn").disabled = true;
 						}
 						
                     },
