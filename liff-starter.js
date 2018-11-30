@@ -66,13 +66,10 @@ function regist()
 			processData: false,
 			contentType: false,
 			success: function(response) {
-                        var obj = jQuery.parseJSON(response);
-						if(obj == "")
-						{
-							document.getElementById("name_lastname").readOnly = false;
-							document.getElementById("pos").readOnly = false;
-							document.getElementById("office").readOnly = false;
-						}
+							document.getElementById("uid").value = response;
+							document.getElementById("name_lastname").value = response;
+							document.getElementById("pos").value = response;
+							document.getElementById("office").value = response;
                     },
                     complete: function() {
                         liff.closeWindow()
