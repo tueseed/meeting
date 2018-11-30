@@ -38,7 +38,7 @@
 				</div>
 			</div>
 		</div>
-	<div class="container-fluid">
+	<div class="mt-2 container-fluid">
 		<div class="row row-center">
 			<div class="col-lg-12">
 				<input type="text" class="form-control" id="uid">
