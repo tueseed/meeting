@@ -31,7 +31,7 @@
 				width: 100%;
 				height: 100%;
 			}
-			.table-responsive 
+			.table-group 
 			{
 				display: block;
 				max-height: 200px;
@@ -252,7 +252,7 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-12">
-									<div class="table-responsive">
+									<div class="table-responsive table-group">
 										<table class="table table-hover">
 											<thead class="thead-dark">
 												<tr>
@@ -299,7 +299,7 @@
 		<div class="mt-2 container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="table-responsive table1">
+					<div class="table-responsive">
 						<table class="table table-hover">
 							<thead class="thead-dark">
 								<tr>
