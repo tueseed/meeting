@@ -15,6 +15,18 @@
 		$nums = $num_day->days;
 		
 		echo $nums.$obj["notice"];
+		if($nums == 0)
+		{
+			$group_explode = explode("|",$obj["notice"]);
+			foreach($group_explode as $group)
+			{
+				$sel_group = "SELECT * FROM tbl_group WHERE group_name = '".$group."'";
+				$query_group = mysqli_query($conn,$sel_group);
+				$obj_group = mysqli_fetch_array($query_group);
+				push($obj_group["group_id"],$obj["meeting_topic"],$obj["meeting_date"],$obj["meeting_time"],$obj["meeting_time2"],$obj["meeting_place"],$obj["meeting_detail"]);
+			}
+			
+		}
 	}
 	function push($id,$topic,$d,$t,$t1,$place,$detail)
 		{
