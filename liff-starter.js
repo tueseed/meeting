@@ -35,17 +35,17 @@ function check_member()
 							document.getElementById("name_lastname").readOnly = false;
 							document.getElementById("pos").readOnly = false;
 							document.getElementById("office").readOnly = false;
-						}
-						/*var i = 0;
-						while(obj[i])
+						}else
 						{
-							document.getElementById("check" + obj[i]).checked = true;
-							i++;
-						}*/
+							document.getElementById("name_lastname").value = obj["group_name"];
+							document.getElementById("pos").value = obj["pos"];
+							document.getElementById("office").value = obj["office"];
+						}
+						
                     },
-                    complete: function() {
+                    /*complete: function() {
                         liff.closeWindow()
-                    }			
+                    }*/			
 			});
 	
 }
@@ -54,6 +54,9 @@ function regist()
 {
 	var formData = new FormData();
 	formData.append('uid', $("#uid").val());
+	formData.append('name_lastname', $("#name_lastname").val());
+	formData.append('pos', $("#pos").val());
+	formData.append('office', $("#office").val());
 	$.ajax({
 			url: 'regist_api.php',
 			method: 'POST',
@@ -70,16 +73,10 @@ function regist()
 							document.getElementById("pos").readOnly = false;
 							document.getElementById("office").readOnly = false;
 						}
-						/*var i = 0;
-						while(obj[i])
-						{
-							document.getElementById("check" + obj[i]).checked = true;
-							i++;
-						}*/
                     },
-                    /*complete: function() {
-                        location.reload();
-                    }*/				
+                    complete: function() {
+                        liff.closeWindow()
+                    }				
 			});
 	
 	
