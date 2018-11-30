@@ -289,7 +289,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-default" data-dismiss="modal" >ตกลง</button>
+							<button type="submit" class="btn btn-default" >ตกลง</button>
 						</div>
 						</form>
 					</div>
