@@ -37,9 +37,9 @@ function check_member()
 							document.getElementById("office").readOnly = false;
 						}else
 						{
-							document.getElementById("name_lastname").value = obj["group_name"];
-							document.getElementById("pos").value = obj["pos"];
-							document.getElementById("office").value = obj["office"];
+							document.getElementById("name_lastname").value = obj.group_name;
+							document.getElementById("pos").value = obj.pos;
+							document.getElementById("office").value = obj.office;
 						}
 						
                     },
