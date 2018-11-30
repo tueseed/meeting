@@ -39,9 +39,46 @@ function check_member()
 							i++;
 						}*/
                     },
-                    complete: function() {
+                    /*complete: function() {
                         location.reload();
-                    }				
+                    }*/				
 			});
+	
+}
+
+function regist()
+{
+	var formData = new FormData();
+	formData.append('uid', $("#uid").val());
+	$.ajax({
+			url: 'regist_api.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+                        var obj = jQuery.parseJSON(response);
+						if(obj == "")
+						{
+							document.getElementById("name_lastname").readOnly = false;
+							document.getElementById("pos").readOnly = false;
+							document.getElementById("office").readOnly = false;
+						}
+						/*var i = 0;
+						while(obj[i])
+						{
+							document.getElementById("check" + obj[i]).checked = true;
+							i++;
+						}*/
+                    },
+                    /*complete: function() {
+                        location.reload();
+                    }*/				
+			});
+	
+	
+	
 	
 }

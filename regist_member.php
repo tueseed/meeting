@@ -46,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-center">
+		<div class="row">
 			<div class="col-lg-12">
 				<div class="form-group">
 					<label for="name_lastname">ชื่อ-นามสกุล</label>
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-center">
+		<div class="row">
 			<div class="col-lg-12">
 				<div class="form-group">
 					<label for="pos">ตำแหน่ง</label>
@@ -62,11 +62,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-center">
+		<div class="row">
 			<div class="col-lg-12">
 				<div class="form-group">
 					<label for="office">หน่วยงาน</label>
 					<input type="text" class="form-control" id="office" readonly>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<input type="button" class="btn btn-success btn-block" onclick="regist()" value="ตกลง">
 				</div>
 			</div>
 		</div>
