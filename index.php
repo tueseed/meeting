@@ -299,7 +299,7 @@
 		<div class="mt-2 container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="table-responsive">
+					<div class="table-responsive table1">
 						<table class="table table-hover">
 							<thead class="thead-dark">
 								<tr>
