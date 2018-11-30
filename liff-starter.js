@@ -9,6 +9,10 @@ function initializeApp(data)
     //document.getElementById('useridfield').textContent = data.context.userId;
 	var a = data.context.userId;
 	document.getElementById('uid').value = a;
+	
+	document.getElementById('btn').addEventListener('click', function () {
+        liff.closeWindow();
+    });
     
 }
 function check_member()
