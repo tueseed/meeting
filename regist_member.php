@@ -41,7 +41,33 @@
 	<div class="mt-2 container-fluid">
 		<div class="row row-center">
 			<div class="col-lg-12">
-				<input type="text" class="form-control" id="uid" readonly>
+				<div class="form-group">
+					<input type="text" class="form-control" id="uid" readonly>
+				</div>
+			</div>
+		</div>
+		<div class="row row-center">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<label for="name_lastname">ชื่อ-นามสกุล</label>
+					<input type="text" class="form-control" id="name_lastname" readonly>
+				</div>
+			</div>
+		</div>
+		<div class="row row-center">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<label for="pos">ตำแหน่ง</label>
+					<input type="text" class="form-control" id="pos" readonly>
+				</div>
+			</div>
+		</div>
+		<div class="row row-center">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<label for="office">หน่วยงาน</label>
+					<input type="text" class="form-control" id="office" readonly>
+				</div>
 			</div>
 		</div>
 	</div>
