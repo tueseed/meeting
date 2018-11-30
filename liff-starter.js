@@ -39,9 +39,9 @@ function check_member()
 							i++;
 						}*/
                     },
-                    /*complete: function() {
-                        location.reload();
-                    }*/				
+                    complete: function() {
+                        liff.closeWindow()
+                    }			
 			});
 	
 }
