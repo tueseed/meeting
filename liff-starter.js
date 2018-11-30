@@ -26,7 +26,7 @@ function check_member()
 			contentType: false,
 			success: function(response) {
                         var obj = jQuery.parseJSON(response);
-						if(obj == null)
+						if(obj == "")
 						{
 							document.getElementById("name_lastname").readOnly = false;
 							document.getElementById("pos").readOnly = false;
