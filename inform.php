@@ -189,7 +189,7 @@
 				<div class="col-lg-6 offset-lg-3">
 					<div class="form-group">
 					  <label for="comment">ผู้รับ:</label>
-					  <textarea class="form-control" rows="3" id="data_inform"></textarea>
+					  <textarea class="form-control" rows="3" id="inform_notice"></textarea>
 					</div>
 				</div>
 			</div>

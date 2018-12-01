@@ -19,7 +19,7 @@ function count_text(text)
 {
 	var str = text;
     var n = str.length;
-    document.getElementById("num").innerHTML = "ข้อความประชาสัมพันธ์(" + n + ")";
+    document.getElementById("num").value = "ข้อความประชาสัมพันธ์(" + n + ")";
 }
 function put_inform(check,data)
 {
@@ -28,13 +28,13 @@ function put_inform(check,data)
 	var x = document.getElementById("check" + check).checked;
 	if(x == true)
 	{
-	document.getElementById("data_inform").value = document.getElementById("data_inform").value + "|" + y;
+	document.getElementById("inform_notice").value = document.getElementById("inform_notice").value + "|" + y;
 	}
 	else if (x == false)
 	{
-		var str = document.getElementById("data_inform").value ;
+		var str = document.getElementById("inform_notice").value ;
 		str = str.replace("|" + y,"");
-		document.getElementById("data_inform").value = str;
+		document.getElementById("inform_notice").value = str;
 	}
 	
 }
