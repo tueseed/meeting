@@ -31,13 +31,6 @@
 				width: 100%;
 				height: 100%;
 			}
-			.table-group 
-			{
-				display: block;
-				max-height: 200px;
-				overflow-y: auto;
-				-ms-overflow-style: -ms-autohiding-scrollbar;
-			}
 			.switch 
 			{
 				position: relative;
@@ -194,7 +187,15 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
-					<div class="table-responsive table-group">
+					<div class="form-group">
+					  <label for="comment">ผู้รับ:</label>
+					  <textarea class="form-control" rows="3" id="data_inform"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="table-responsive">
 						<table class="table table-hover">
 							<thead class="thead-dark">
 								<tr>
@@ -229,6 +230,13 @@
 					</div>
 				</div>
 			</div>	
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="form-group">
+						<input type="button" class="btn btn-success btn-block" onclick="inform()" value="ส่ง">
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </hmtl>
