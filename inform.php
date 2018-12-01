@@ -142,8 +142,16 @@
 		document.getElementById("mySidenav").style.width = "250px";
 	}
 
-	function closeNav() {
+	function closeNav() 
+	{
 		document.getElementById("mySidenav").style.width = "0";
+	}
+	function text_re(text) 
+	{
+		var str = text;
+		var n = str.length;
+		var re = 2000-n;
+		document.getElementById("num").innerHTML = "ข้อความประชาสัมพันธ์(พิมพ์ได้อีก " + re + " ตัวอักษร)";
 	}
 	</script>
 	<body>
@@ -181,7 +189,7 @@
 				<div class="col-lg-6 offset-lg-3">
 					<div class="form-group">
 					  <label for="data_inform" id="num">ข้อความประชาสัมพันธ์:</label>
-					  <textarea class="form-control" rows="5" maxlength="2000" id="data_inform" onchange="count_text(this.value)"></textarea>
+					  <textarea class="form-control" rows="5" maxlength="2000" id="data_inform" onkeyup="text_re(this.value)""></textarea>
 					</div>
 				</div>
 			</div>
