@@ -180,8 +180,8 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="form-group">
-					  <label for="comment">ข้อความประชาสัมพันธ์:</label>
-					  <textarea class="form-control" rows="5" id="data_inform"></textarea>
+					  <label for="data_inform" id="num">ข้อความประชาสัมพันธ์:</label>
+					  <textarea class="form-control" rows="5" maxlength="2000" id="data_inform" onchange="count_text(this.value)"></textarea>
 					</div>
 				</div>
 			</div>

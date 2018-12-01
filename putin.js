@@ -15,6 +15,12 @@ function put_in(check,data)
 	}
 	
 }
+function count_text(text)
+{
+	var str = text;
+    var n = str.length;
+    document.getElementById("num").innerHTML = "ข้อความประชาสัมพันธ์(" + n + ")";
+}
 function put_inform(check,data)
 {
 	//alert("Hi...." + data);
