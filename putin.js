@@ -1,14 +1,3 @@
-function validateForm()
-    {
-        var a=document.forms["Form"]["meeting_topic"].value;
-        
-        if (a==null || a=="")
-        {
-            alert("Please Fill All Required Field");
-            return false;
-        }
-    }
-	
 function put_in(check,data)
 {
 	//alert("Hi...." + data);
@@ -23,6 +12,23 @@ function put_in(check,data)
 		var str = document.getElementById("notice").value ;
 		str = str.replace("|" + y,"");
 		document.getElementById("notice").value = str;
+	}
+	
+}
+function put_inform(check,data)
+{
+	//alert("Hi...." + data);
+	var y = data;
+	var x = document.getElementById("check" + check).checked;
+	if(x == true)
+	{
+	document.getElementById("data_inform").value = document.getElementById("data_inform").value + "|" + y;
+	}
+	else if (x == false)
+	{
+		var str = document.getElementById("data_inform").value ;
+		str = str.replace("|" + y,"");
+		document.getElementById("data_inform").value = str;
 	}
 	
 }
