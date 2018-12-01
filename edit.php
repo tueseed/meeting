@@ -166,7 +166,7 @@
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="index.php">สร้างการประชุม</a>
 		  <a href="edit.php">แก้ไขการประชุม</a>
-		  <a href="#">ประชาสัมพัรธ์</a>
+		  <a href="inform.php">ประชาสัมพันธ์</a>
 		</div>
 		<div class="container-fluid" style="background-color:#b461fb;">
 			<div class="row row-center" >
