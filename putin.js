@@ -108,6 +108,31 @@ function push_now(meet_id)
 	
 	
 }
+function push_inform(meet_id)
+{
+	//alert('ส่งข้อความแจ้งเตือนตอนี้เหรอ');
+	var formData = new FormData();
+		formData.append('data_inform', $("#data_inform").val());
+		formData.append('inform_notice', $("#inform_notice").val());
+		$.ajax({
+			url: 'push_inform.php',
+			method: 'POST',
+			data: formData,
+			async: true,
+			cache: false,
+			processData: false,
+			contentType: false,
+			success: function(response) {
+                        alert(response);
+                    },
+                    complete: function() {
+                        location.reload();
+                    }				
+			});
+	
+	
+	
+}
 function send_edit(id,topic,d,t,t1,place,detail,notice,link)
 {
 	document.getElementById("meeting_id").value = id;

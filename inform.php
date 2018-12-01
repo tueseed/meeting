@@ -241,7 +241,7 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="form-group">
-						<input type="button" class="btn btn-success btn-block" onclick="inform()" value="ส่ง">
+						<input type="button" class="btn btn-success btn-block" onclick="push_inform()" value="ส่ง">
 					</div>
 				</div>
 			</div>
