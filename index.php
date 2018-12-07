@@ -188,7 +188,7 @@
 				<script src="putin.js"></script>
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-						<form name="form1" id="form1" method="post" onsubmit="send()">
+						
 						<div class="modal-header">
 							<h4 class="modal-title">เพิ่มการประชุม</h4>
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -289,9 +289,9 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-default" >ตกลง</button>
+							<button type="submit" class="btn btn-default" onclick="send()">ตกลง</button>
 						</div>
-						</form>
+						
 					</div>
 				</div>
 			</div>
