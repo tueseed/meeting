@@ -193,7 +193,7 @@
 									<div class="form-group">
 										
 										<label for="meeting_id">ID</label>
-										<input class="form-control" type="text" name="meeting_id" id="meeting_id"/>
+										<input class="form-control" type="text" name="meeting_id" id="meeting_id" readonly />
 									</div>
 								</div>
 							</div>
@@ -335,7 +335,7 @@
 										$data = "'".$obj_meet["id"]."','".$obj_meet["meeting_topic"]."','".$date2."','".$obj_meet["meeting_time"]."','".$obj_meet["meeting_time2"]."','".$obj_meet["meeting_place"]."','".$obj_meet["meeting_detail"]."','".$obj_meet["notice"]."','".$obj_meet["link"]."'";
 								?>
 										<td><input type="button" class="btn btn-success" value="แก้ไข" data-toggle="modal" href="#addtopic" onclick="send_edit(<?php echo $data;?>)"></td>
-										<td><input type="button" class="btn btn-success" value="ลอง" onclick="test(<?php echo "'".$obj_meet["notice"]."'";?>)"></td>
+										
 								<?php
 										echo "</tr>";
 										$a = $a +1 ;

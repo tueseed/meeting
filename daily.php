@@ -15,7 +15,7 @@
 		$nums = $num_day->days;
 		
 		echo $nums.$obj["notice"];
-		if($nums == 0)
+		if($nums == 0 || $nums == 1)
 		{
 			$group_explode = explode("|",$obj["notice"]);
 			foreach($group_explode as $group)
